@@ -11,12 +11,14 @@
 <!-- Add this to your HTML page, preferably before the closing </body> tag -->
 <script src="https://testmyprompt.com/widget/6817ff6054884bd114a956e4/widget.js"></script>
 <script>
-  // Initialize the widget after the script loads
-  document.addEventListener('DOMContentLoaded', function() {
-    window.AIChatWidget.init({
-      widgetId: "6817ff6054884bd114a956e4"
-    });
+  window.addEventListener('load', function() {
+    if (window.AIChatWidget) {
+      window.AIChatWidget.init({
+        widgetId: "6817ff6054884bd114a956e4"
+      });
+    }
   });
 </script>
+
 </body>
 </html>
